@@ -61,7 +61,7 @@ class PostsController < ApplicationController
   # Strong parameters types the params passed to requests and db.  
   private def post_params 
     # Prevents malicious code submission from forms.  
-    params.require(:post).permit(:title, :body)
+    params.require(:post).permit(:title, :body, :status)
   end 
 
 end

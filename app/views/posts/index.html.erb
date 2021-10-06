@@ -1,16 +1,19 @@
 <div class="mt-4">
   <h1>Blog posts</h1>
+  <p class='mx-1'>Currently browsing <%= Post.public_count %> public posts.</p>
     <% @post.each do |post| %>
-    <div class="card bg-light my-3">
-      <div class="card-body">
-        <h3>
-            <%= post.title %>
-        </h3>
-        <p>
-            <%= post.body %>
-        </p>
-        <%= link_to "Read More!", post_path(post), :class => 'btn btn-secondary'%>
+    <% if post.public? %>
+      <div class="card bg-light my-3">
+        <div class="card-body">
+          <h3>
+              <%= post.title %>
+          </h3>
+          <p>
+              <%= post.body %>
+          </p>
+          <%= link_to "Read More!", post_path(post), :class => 'btn btn-secondary'%>
+        </div>
       </div>
-    </div>
+    <% end %>
     <% end %>
 </div>

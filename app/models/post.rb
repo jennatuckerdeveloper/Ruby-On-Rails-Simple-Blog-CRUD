@@ -1,5 +1,5 @@
 class Post < ApplicationRecord
-
+include Visible
 has_many  :comments, dependent: :delete_all
 
 # A string being required includes one non-white space character. 
