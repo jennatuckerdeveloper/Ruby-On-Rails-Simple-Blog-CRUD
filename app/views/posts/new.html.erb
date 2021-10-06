@@ -1,23 +1,4 @@
 <h3>Create Post</h3>
-<%= form_for :post, url: posts_path do |f| %>
-<% # Why do we use the symbol :post not the @post instance to make the form? %>
-<% # Alternate keyword param version: form_with model: @article do |form| %>
-<% if @post.errors.any? %>
-  <% @post.errors.full_messages.each do |msg| %>
-  <div class="alert alert-danger">
-    <%= msg %>
-  </div>
-  <% end %>
-<% end %>
-<p>
-  <%= f.label :title %>
-  <%= f.text_field(:title, {:class => 'form-control'}) %>
-</p>
-<p>
-  <%= f.label :body %>
-  <%= f.text_area(:body, {:class => 'form-control'}) %>
-</p>
-<span>
-  <%= f.submit({:class => 'btn btn-primary'})%>
-</span>
-<% end %>
+<%= render 'form' %>
+
+

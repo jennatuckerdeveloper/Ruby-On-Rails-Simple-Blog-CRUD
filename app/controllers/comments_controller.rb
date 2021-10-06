@@ -10,8 +10,6 @@ class CommentsController < ApplicationController
   end
 
   def destroy 
-    logger.info '>>>>>>>>>>>'
-    logger.info params
     @post = Post.find(params[:post_id])
     @comment = @post.comments.find(params[:id])
     @comment.destroy
