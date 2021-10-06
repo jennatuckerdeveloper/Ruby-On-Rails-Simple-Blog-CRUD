@@ -1,0 +1,21 @@
+<%= form_with model: @post, local: true do |f| %>
+
+<% if @post.errors.any? %>
+  <% @post.errors.full_messages.each do |msg| %>
+  <div class="alert alert-danger">
+    <%= msg %>
+  </div>
+  <% end %>
+<% end %>
+<p>
+  <%= f.label :title %>
+  <%= f.text_field(:title, {:class => 'form-control'}) %>
+</p>
+<p>
+  <%= f.label :body %>
+  <%= f.text_area(:body, {:class => 'form-control'}) %>
+</p>
+<span>
+  <%= f.submit({:class => 'btn btn-primary'})%>
+</span>
+<% end %>

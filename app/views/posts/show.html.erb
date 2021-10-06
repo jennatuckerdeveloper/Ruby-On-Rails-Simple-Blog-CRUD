@@ -6,7 +6,7 @@
     <%= @post.body %>
   </p>
   <%= link_to "Edit", edit_post_path(@post), :class => 'btn-sm btn-secondary text-decoration-none' %>
-  <%= link_to "Delete", post_path(@post), method: :delete, :class => 'btn-sm btn-danger text-decoration-none' %>
+  <%= link_to "Delete", post_path(@post), method: :delete, data: { confirm: "Are you sure?" }, :class => 'btn-sm btn-danger text-decoration-none' %>
 
   <%= render 'comments/comments' %>
   <%= render 'comments/form' %>
