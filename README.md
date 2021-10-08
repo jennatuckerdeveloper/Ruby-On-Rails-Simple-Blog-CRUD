@@ -38,3 +38,5 @@ For my own Macbook, the following steps were successful:
 2. From the folder with the Gemfile, run `bundle install`
 3. Run `rake db:migrate` and `rake db:seed`
 4. Run `rails server`
+5. Open browser to `localhost:3000`to see running app.
+6. This example app has basic auth protecting some actions. A test username and password, visible in the Posts controller file, have been set to `admin` and `1234`.
