@@ -5,8 +5,8 @@
 This simple blog app is a learning app based on the classic, first application for those
 learning Ruby On Rails. The comments include learning notes. This app was built
 using a collection of Ruby language resources online, [Brad Travery's YouTube
-video Ruby On Rails In 60 Minutes] (https://www.youtube.com/watch?v=pPy0GQJLZUM),
-and [the officals Rails getting started guide] (https://guides.rubyonrails.org/getting_started.html).
+video Ruby On Rails In 60 Minutes](https://www.youtube.com/watch?v=pPy0GQJLZUM),
+and [the officals Rails getting started guide](https://guides.rubyonrails.org/getting_started.html).
 
 # Ruby and Ruby On Rails Learning Notes:
 
