@@ -36,5 +36,5 @@ For my own Macbook, the following steps were successful:
 
 1. Clone the repo.
 2. From the folder with the Gemfile, run `bundle install`
-3. Run `rake db:migrate`
+3. Run `rake db:migrate` and `rake db:seed`
 4. Run `rails server`
